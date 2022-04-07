@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+background-image:url(slike/papir.jpg);
+/*color:#fff;*/
+font-family:Arial, sans-serif;
+}
+
+
+
+#omot {
+margin:5px auto;
+width: 950px;
+}
+		
+header {
+/*background:#C09;*/
+height:140px;
+background-image:url(slike/logo.png);
+background-repeat:no-repeat;
+background-position:center;
+border-bottom:solid 3px #cc0033;
+}
+
+nav {
+	height:30px;
+	z-index:10;
+	margin:auto;
+}
+
+.meni {
+	list-style-type:none;
+	padding:0px;
+	margin:0px 0px 0px 50px;
+	width:100%;
+	position:relative;
+	z-index:15;
+}
+
+nav li {
+	display:inline;
+	/*margin-right:10px;*/
+	float:left;
+	text-align:center;
+	position:relative;
+	font-size:12pt;
+	background-color:#333;
+}
+
+nav li a {
+	display:block;
+	width:100px;
+	padding:5px 15px;
+	color:white;
+	text-decoration:none;
+}
+
+nav li ul {
+	display:none;
+}
+
+nav li:hover ul {
+	display:block;
+	position:absolute;
+	margin:0px;
+	padding:0px;
+	width:100px;
+	z-index:10;
+	color:#cc0033;
+	text-decoration:none;
+}
+
+nav li :hover li {
+	float:none;
+	padding:0px;
+	margin:0px;
+	text-align:left;
+}
+
+nav li li a {
+	display:block;
+	width:100px;
+	padding-left:30px;
+	z-index:20;
+}
+
+nav li li a:hover {
+	border:1px;
+}
+
+
+
+
+/** <sectioni> **/
+
+/** lijevo **/
+
+#lijevo {
+/*background:#03C;*/
+width:200px;
+height:700px;
+border-right:solid 1px;
+border-color:black;
+position:absolute;
+margin:auto;
+}
+
+
+
+/** sadržaj  **/
+
+#sredina {
+	/*background:#F09;*/
+	height:700px;
+	width:550px;
+	border-right:solid 1px;
+	border-color:black;
+	position:absolute;
+	margin:auto;
+	margin-left:200px;
+	overflow:scroll;
+	overflow:auto;
+}
+
+p {
+color:black;
+font-size:11pt;
+text-align:inherit;
+padding-top:5px;
+padding-bottom:5px;
+padding-left:10px;
+padding-right:10px;
+}
+
+h1 {
+	color:white;
+	font-size:14pt;
+	font-weight:1000;
+	padding:3px 10px 3px 10px;
+	background-color:#cc0033;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+
+h2 {
+	color:black;
+	font-size:13pt;
+	font-weight:1000;
+	padding:3px 10px 3px 10px;
+}
+
+a {
+	text-decoration:none;
+	font-weight:1000;
+	color:#cc0033;
+}
+
+vlink {
+	text-decoration:none;
+	color:#ff0066;
+}
+
+a:hover {
+	text-decoration:none;
+	color:#cc0033;
+}
+
+a:active {
+	color:#cc0033;
+	text-decoration:none;
+	font-weight:1000;
+}
+/** desno **/
+#desno {
+/*background:#00FF00;*/
+width:200px;
+height:700px;
+position:relative;
+margin:auto;
+margin-left:750px;
+}
+
+/* podnožje */
+footer {
+/*background:#FFFF00;*/
+height:50px;
+clear:both;
+}
